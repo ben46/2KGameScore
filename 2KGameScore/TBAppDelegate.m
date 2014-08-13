@@ -7,6 +7,7 @@
 //
 
 #import "TBAppDelegate.h"
+#import "TBScoreTableViewController.h"
 
 @implementation TBAppDelegate
 
@@ -15,6 +16,12 @@
     self.window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
     // Override point for customization after application launch.
     self.window.backgroundColor = [UIColor whiteColor];
+    
+    UINavigationController *nc = [[UINavigationController alloc] initWithRootViewController:[[TBScoreTableViewController alloc] init]];
+    [nc.navigationBar setTintColor:kTBTintColor];
+    
+    self.window.rootViewController = nc;
+    
     [self.window makeKeyAndVisible];
     return YES;
 }

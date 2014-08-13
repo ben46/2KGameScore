@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		654B7A92604244BEBC153AB0 /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 567DDD565DBF410D9A8C87C6 /* libPods.a */; };
 		CB16F84C199A50440068BE3A /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CB16F84B199A50440068BE3A /* Foundation.framework */; };
 		CB16F84E199A50440068BE3A /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CB16F84D199A50440068BE3A /* CoreGraphics.framework */; };
 		CB16F850199A50440068BE3A /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CB16F84F199A50440068BE3A /* UIKit.framework */; };
@@ -19,6 +20,12 @@
 		CB16F867199A50440068BE3A /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CB16F84F199A50440068BE3A /* UIKit.framework */; };
 		CB16F86F199A50440068BE3A /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = CB16F86D199A50440068BE3A /* InfoPlist.strings */; };
 		CB16F871199A50440068BE3A /* _KGameScoreTests.m in Sources */ = {isa = PBXBuildFile; fileRef = CB16F870199A50440068BE3A /* _KGameScoreTests.m */; };
+		CB16F87C199A505F0068BE3A /* TBScoreTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CB16F87B199A505F0068BE3A /* TBScoreTableViewController.m */; };
+		CB16F880199A50720068BE3A /* TBScoreTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = CB16F87E199A50720068BE3A /* TBScoreTableViewCell.m */; };
+		CB16F881199A50720068BE3A /* TBScoreTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = CB16F87F199A50720068BE3A /* TBScoreTableViewCell.xib */; };
+		CB16F884199A51E10068BE3A /* Score.m in Sources */ = {isa = PBXBuildFile; fileRef = CB16F883199A51E10068BE3A /* Score.m */; };
+		CB16F888199A52720068BE3A /* TBAddScoreViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CB16F886199A52720068BE3A /* TBAddScoreViewController.m */; };
+		CB16F889199A52720068BE3A /* TBAddScoreViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = CB16F887199A52720068BE3A /* TBAddScoreViewController.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -32,6 +39,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		567DDD565DBF410D9A8C87C6 /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		AEABBC7F18BE4C09ABDE5E65 /* Pods.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.xcconfig; path = Pods/Pods.xcconfig; sourceTree = "<group>"; };
 		CB16F848199A50440068BE3A /* 2KGameScore.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = 2KGameScore.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		CB16F84B199A50440068BE3A /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		CB16F84D199A50440068BE3A /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -48,6 +57,16 @@
 		CB16F86C199A50440068BE3A /* 2KGameScoreTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "2KGameScoreTests-Info.plist"; sourceTree = "<group>"; };
 		CB16F86E199A50440068BE3A /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		CB16F870199A50440068BE3A /* _KGameScoreTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = _KGameScoreTests.m; sourceTree = "<group>"; };
+		CB16F87A199A505F0068BE3A /* TBScoreTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TBScoreTableViewController.h; sourceTree = "<group>"; };
+		CB16F87B199A505F0068BE3A /* TBScoreTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TBScoreTableViewController.m; sourceTree = "<group>"; };
+		CB16F87D199A50720068BE3A /* TBScoreTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TBScoreTableViewCell.h; sourceTree = "<group>"; };
+		CB16F87E199A50720068BE3A /* TBScoreTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TBScoreTableViewCell.m; sourceTree = "<group>"; };
+		CB16F87F199A50720068BE3A /* TBScoreTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = TBScoreTableViewCell.xib; sourceTree = "<group>"; };
+		CB16F882199A51E10068BE3A /* Score.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Score.h; sourceTree = "<group>"; };
+		CB16F883199A51E10068BE3A /* Score.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Score.m; sourceTree = "<group>"; };
+		CB16F885199A52720068BE3A /* TBAddScoreViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TBAddScoreViewController.h; sourceTree = "<group>"; };
+		CB16F886199A52720068BE3A /* TBAddScoreViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TBAddScoreViewController.m; sourceTree = "<group>"; };
+		CB16F887199A52720068BE3A /* TBAddScoreViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = TBAddScoreViewController.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,6 +77,7 @@
 				CB16F84E199A50440068BE3A /* CoreGraphics.framework in Frameworks */,
 				CB16F850199A50440068BE3A /* UIKit.framework in Frameworks */,
 				CB16F84C199A50440068BE3A /* Foundation.framework in Frameworks */,
+				654B7A92604244BEBC153AB0 /* libPods.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -81,6 +101,7 @@
 				CB16F86A199A50440068BE3A /* 2KGameScoreTests */,
 				CB16F84A199A50440068BE3A /* Frameworks */,
 				CB16F849199A50440068BE3A /* Products */,
+				AEABBC7F18BE4C09ABDE5E65 /* Pods.xcconfig */,
 			);
 			sourceTree = "<group>";
 		};
@@ -100,6 +121,7 @@
 				CB16F84D199A50440068BE3A /* CoreGraphics.framework */,
 				CB16F84F199A50440068BE3A /* UIKit.framework */,
 				CB16F864199A50440068BE3A /* XCTest.framework */,
+				567DDD565DBF410D9A8C87C6 /* libPods.a */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -111,6 +133,16 @@
 				CB16F85B199A50440068BE3A /* TBAppDelegate.m */,
 				CB16F85D199A50440068BE3A /* Images.xcassets */,
 				CB16F852199A50440068BE3A /* Supporting Files */,
+				CB16F87A199A505F0068BE3A /* TBScoreTableViewController.h */,
+				CB16F87B199A505F0068BE3A /* TBScoreTableViewController.m */,
+				CB16F87D199A50720068BE3A /* TBScoreTableViewCell.h */,
+				CB16F87E199A50720068BE3A /* TBScoreTableViewCell.m */,
+				CB16F87F199A50720068BE3A /* TBScoreTableViewCell.xib */,
+				CB16F882199A51E10068BE3A /* Score.h */,
+				CB16F883199A51E10068BE3A /* Score.m */,
+				CB16F885199A52720068BE3A /* TBAddScoreViewController.h */,
+				CB16F886199A52720068BE3A /* TBAddScoreViewController.m */,
+				CB16F887199A52720068BE3A /* TBAddScoreViewController.xib */,
 			);
 			path = 2KGameScore;
 			sourceTree = "<group>";
@@ -151,9 +183,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = CB16F874199A50440068BE3A /* Build configuration list for PBXNativeTarget "2KGameScore" */;
 			buildPhases = (
+				AC2B9707546C43F3A5504063 /* Check Pods Manifest.lock */,
 				CB16F844199A50440068BE3A /* Sources */,
 				CB16F845199A50440068BE3A /* Frameworks */,
 				CB16F846199A50440068BE3A /* Resources */,
+				87EE0866FE234CC0ACBA6245 /* Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -220,8 +254,10 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CB16F881199A50720068BE3A /* TBScoreTableViewCell.xib in Resources */,
 				CB16F856199A50440068BE3A /* InfoPlist.strings in Resources */,
 				CB16F85E199A50440068BE3A /* Images.xcassets in Resources */,
+				CB16F889199A52720068BE3A /* TBAddScoreViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -235,6 +271,39 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		87EE0866FE234CC0ACBA6245 /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Pods-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		AC2B9707546C43F3A5504063 /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		CB16F844199A50440068BE3A /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
@@ -242,6 +311,10 @@
 			files = (
 				CB16F85C199A50440068BE3A /* TBAppDelegate.m in Sources */,
 				CB16F858199A50440068BE3A /* main.m in Sources */,
+				CB16F884199A51E10068BE3A /* Score.m in Sources */,
+				CB16F880199A50720068BE3A /* TBScoreTableViewCell.m in Sources */,
+				CB16F87C199A505F0068BE3A /* TBScoreTableViewController.m in Sources */,
+				CB16F888199A52720068BE3A /* TBAddScoreViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -355,6 +428,7 @@
 		};
 		CB16F875199A50440068BE3A /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = AEABBC7F18BE4C09ABDE5E65 /* Pods.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
@@ -368,6 +442,7 @@
 		};
 		CB16F876199A50440068BE3A /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = AEABBC7F18BE4C09ABDE5E65 /* Pods.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
@@ -438,6 +513,7 @@
 				CB16F876199A50440068BE3A /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		CB16F877199A50440068BE3A /* Build configuration list for PBXNativeTarget "2KGameScoreTests" */ = {
 			isa = XCConfigurationList;
@@ -446,6 +522,7 @@
 				CB16F879199A50440068BE3A /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

@@ -13,4 +13,6 @@
 #ifdef __OBJC__
     #import <UIKit/UIKit.h>
     #import <Foundation/Foundation.h>
+
+#define kTBTintColor [UIColor colorWithRed:0.470 green:0.866 blue:1.000 alpha:1.000]
 #endif
