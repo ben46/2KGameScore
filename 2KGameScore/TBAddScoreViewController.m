@@ -39,7 +39,20 @@
     [self.addButton.titleLabel setShadowOffset:CGSizeZero];
     [self.addButton setTitleShadowColor:[UIColor clearColor] forState:UIControlStateNormal];
     [self.addButton setTitleColor:kTBTintColor forState:UIControlStateNormal];
-
+    
+    NSArray *arr = [Score JM_allOrderBy:@"createAt desc"];
+    
+    if(arr.count){
+        
+        Score *score = [arr objectAtIndex:0];
+        self.winnerTeamTF.text = score.winnerTeam;
+        self.loserTeamTF.text = score.loserTeam;
+        
+        self.winnerTF.text = score.winner;
+        self.loserTF.text = score.loser;
+        
+    }
+    
 }
 
 - (void)didReceiveMemoryWarning
@@ -64,8 +77,14 @@
     
     [score JM_save];
     
+    [self.navigationController popViewControllerAnimated:YES];
+    
 }
 
+- (void)textFieldDidBeginEditing:(UITextField *)textField;           // became first responder
+{
+    [textField setText:@""];
+}
 
 - (BOOL)textField:(UITextField *)textField shouldChangeCharactersInRange:(NSRange)range replacementString:(NSString *)string;   // return NO to not change text
 {
