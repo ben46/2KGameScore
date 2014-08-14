@@ -1,0 +1,21 @@
+PODS:
+  - FMDB (2.3):
+    - FMDB/standard
+  - FMDB/common (2.3)
+  - FMDB/standard (2.3):
+    - FMDB/common
+  - JSONModel (0.13.0):
+    - FMDB (~> 2.3)
+
+DEPENDENCIES:
+  - JSONModel (from `/Users/zhou/Documents/workspace/TBJSONModel/`)
+
+EXTERNAL SOURCES:
+  JSONModel:
+    :path: /Users/zhou/Documents/workspace/TBJSONModel/
+
+SPEC CHECKSUMS:
+  FMDB: 31ec26773c7f7b7890a6038235a1f2bbd933a7cb
+  JSONModel: 994c2550a05986cd01ed15849a17b4d82f5f235c
+
+COCOAPODS: 0.33.1
