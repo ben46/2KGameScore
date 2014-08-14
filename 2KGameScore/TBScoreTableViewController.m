@@ -10,6 +10,7 @@
 #import "TBScoreTableViewCell.h"
 #import "Score.h"
 #import "TBAddScoreViewController.h"
+#import "TBWinRateViewController.h"
 
 @interface TBScoreTableViewController ()
 
@@ -45,7 +46,14 @@
     [btn addTarget:self action:@selector(addButtonTouched:) forControlEvents:UIControlEventTouchUpInside];
     UIBarButtonItem *barbtnitm = [[UIBarButtonItem alloc]initWithCustomView:btn];
     self.navigationItem.leftBarButtonItem = barbtnitm;
+
     
+    UIButton *btn2 = [self createButtonForback];
+    [btn2 setTitle:@"胜率" forState:UIControlStateNormal];
+    [btn2 addTarget:self action:@selector(rateButtonTouched:) forControlEvents:UIControlEventTouchUpInside];
+    UIBarButtonItem *barbtnitm2 = [[UIBarButtonItem alloc]initWithCustomView:btn2];
+    self.navigationItem.rightBarButtonItem = barbtnitm2;
+
 }
 
 - (UIButton *)createButtonForback {
@@ -55,6 +63,13 @@
     [btn setTitleColor:kTBTintColor forState:UIControlStateNormal];
     return btn;
     
+}
+
+- (void)rateButtonTouched:(id)sender {
+    
+    TBWinRateViewController *vc = [[TBWinRateViewController alloc] init];
+    [self.navigationController pushViewController:vc animated:YES];
+
 }
 
 - (void)addButtonTouched:(id)sender

@@ -26,6 +26,7 @@
 		CB16F884199A51E10068BE3A /* Score.m in Sources */ = {isa = PBXBuildFile; fileRef = CB16F883199A51E10068BE3A /* Score.m */; };
 		CB16F888199A52720068BE3A /* TBAddScoreViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CB16F886199A52720068BE3A /* TBAddScoreViewController.m */; };
 		CB16F889199A52720068BE3A /* TBAddScoreViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = CB16F887199A52720068BE3A /* TBAddScoreViewController.xib */; };
+		CBADD3D0199BED46000F6562 /* TBWinRateViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CBADD3CE199BED46000F6562 /* TBWinRateViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -67,6 +68,8 @@
 		CB16F885199A52720068BE3A /* TBAddScoreViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TBAddScoreViewController.h; sourceTree = "<group>"; };
 		CB16F886199A52720068BE3A /* TBAddScoreViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TBAddScoreViewController.m; sourceTree = "<group>"; };
 		CB16F887199A52720068BE3A /* TBAddScoreViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = TBAddScoreViewController.xib; sourceTree = "<group>"; };
+		CBADD3CD199BED46000F6562 /* TBWinRateViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TBWinRateViewController.h; sourceTree = "<group>"; };
+		CBADD3CE199BED46000F6562 /* TBWinRateViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TBWinRateViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -143,6 +146,8 @@
 				CB16F885199A52720068BE3A /* TBAddScoreViewController.h */,
 				CB16F886199A52720068BE3A /* TBAddScoreViewController.m */,
 				CB16F887199A52720068BE3A /* TBAddScoreViewController.xib */,
+				CBADD3CD199BED46000F6562 /* TBWinRateViewController.h */,
+				CBADD3CE199BED46000F6562 /* TBWinRateViewController.m */,
 			);
 			path = 2KGameScore;
 			sourceTree = "<group>";
@@ -315,6 +320,7 @@
 				CB16F880199A50720068BE3A /* TBScoreTableViewCell.m in Sources */,
 				CB16F87C199A505F0068BE3A /* TBScoreTableViewController.m in Sources */,
 				CB16F888199A52720068BE3A /* TBAddScoreViewController.m in Sources */,
+				CBADD3D0199BED46000F6562 /* TBWinRateViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
