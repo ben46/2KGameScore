@@ -45,7 +45,7 @@
                                                     
                                                     NSString *user = [dict objectForKey:@"winner"];
                                                     [self.list addObject:@{@"user":user,
-                                                                           @"rate":@([self calRate:user])
+                                                                           @"rate":[self calRate:user]
                                                                            }];
                                                     
                                                     [weakSelf.tableView reloadData];
@@ -55,14 +55,14 @@
     
 }
 
-- (CGFloat)calRate:(NSString *)winnerName
+- (NSString *)calRate:(NSString *)winnerName
 {
     
     NSArray *wins = [Score JM_whereCol:@"winner" isEqualTo:winnerName];
     NSArray *loses = [Score JM_whereCol:@"loser" isEqualTo:winnerName];
     CGFloat rate = wins.count / (CGFloat)(wins.count + loses.count) * 100;
-
-    return rate;
+    
+    return [NSString stringWithFormat:@"胜%d/负%d    %.0f%%", wins.count, loses.count, rate];
     
 }
 
@@ -92,8 +92,8 @@
     }
     NSString *user = [[self.list objectAtIndex:indexPath.row] objectForKey:@"user"];
     cell.textLabel.text = [user JM_decodeFromPercentEscapeString];
-    NSNumber *num = [[self.list objectAtIndex:indexPath.row] objectForKey:@"rate"];
-    NSString *detail =[NSString stringWithFormat:@"%.0f$    胜率", [num floatValue]];
+    NSString *num = [[self.list objectAtIndex:indexPath.row] objectForKey:@"rate"];
+    NSString *detail = num;
     cell.detailTextLabel.text =detail;
     
     return cell;
